@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Learn why we recommend the unofficial Cats Blender Plugin over the official version.">
+    <title>Why We Recommend the Unofficial Version - Cats Blender Plugin</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+    
+    <!-- Favicon (same location as Neoneko) -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/170367184?s=200&v=4" type="image/png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Additional CSS for this page -->
+    <style>
+        .why-section {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .why-section h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        
+        .reason-card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .reason-card h3 {
+            color: var(--primary-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .timeline-section {
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-section h2 {
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-list {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+        
+        .timeline-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .timeline-list li::before {
+            content: "•";
+            color: var(--primary-light);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .statement-card {
+            background-color: rgba(43, 80, 138, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .statement-card h3 {
+            color: var(--primary-light);
+            margin-bottom: 0.75rem;
+        }
+        
+        .statement-card p {
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+        
+        .warning-card {
+            background-color: rgba(201, 76, 76, 0.1);
+            border-left: 4px solid #c94c4c;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-card h3 {
+            color: #e67e7e;
+            margin-bottom: 0.75rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .comparison-table th {
+            background-color: var(--bg-card-hover);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--primary-dark);
+            color: var(--primary-light);
+        }
+        
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(107, 152, 194, 0.2);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .help-section {
+            margin-top: 2.5rem;
+        }
+        
+        .help-section h2 {
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+        }
+        
+        .upgrade-section {
+            background-color: rgba(43, 100, 138, 0.15);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .upgrade-section h2 {
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .upgrade-point {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .upgrade-point h3 {
+            color: var(--accent-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .guide-section {
+            margin-top: 3rem;
+            border-top: 1px solid rgba(107, 152, 194, 0.2);
+            padding-top: 3rem;
+        }
+        
+        .guide-section h2 {
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .guide-subsection {
+            margin-bottom: 2.5rem;
+        }
+        
+        .guide-subsection h3 {
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 1px solid rgba(107, 152, 194, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+            margin: 1rem 0;
+        }
+        
+        .download-button:hover {
+            background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .guide-list {
+            list-style-type: none;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .guide-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .guide-list li::before {
+            content: "•";
+            color: var(--primary-light);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .guide-card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .guide-card h4 {
+            color: var(--primary-light);
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-block {
+            background-color: rgba(138, 86, 172, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-weight: 500;
+        }
+        
+        .code-block {
+            background-color: var(--bg-darker);
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .why-section {
+                padding: 2rem 0;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th, 
+            .comparison-table td {
+                padding: 0.5rem 0.75rem;
+            }
+            
+            .upgrade-section,
+            .guide-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <!-- Logo using the same location as Neoneko -->
+                    <img src="https://avatars.githubusercontent.com/u/170367184?s=200&v=4" alt="Cats Blender Plugin Logo" class="logo-image">
+                    <span class="logo-text">Cats Blender Plugin</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Projects</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://cats.neoneko.xyz" role="menuitem">Cats Blender Plugin</a>
+                            <a href="https://toolkit.neoneko.xyz" role="menuitem">Avatar Toolkit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Community</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://discord.neoneko.xyz/" role="menuitem">Discord</a>
+                            <a href="https://github.com/teamneoneko/cats-blender-plugin" role="menuitem">GitHub</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">About</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://neoneko.xyz/about.html" role="menuitem">About Us</a>
+                            <a href="https://neoneko.xyz/support-us.html" role="menuitem">Support Us</a>
+                            <a href="https://neoneko.xyz/contact.html" role="menuitem">Contact</a>
+                        </div>
+                    </li>
+                    <li><a href="legacywiki.html">Wiki</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section class="why-section">
+                <h1>Why We Recommend the Unofficial Version</h1>
+                <div class="divider"></div>
+                
+                <div class="timeline-section">
+                    <h2>Current Status</h2>
+                    <p>As of August 2024, the Official Cats Blender Plugin appears to be in an indefinite hiatus. Here's the timeline:</p>
+                    <ul class="timeline-list">
+                        <li>Last Official Release: June 27, 2021</li>
+                        <li>Last Main Branch Update: January 25, 2022</li>
+                        <li>Last Development Branch Updates:
+                            <ul>
+                                <li>November 30, 2023 (minor fix)</li>
+                                <li>April 8, 2023 (version bump)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="statement-card">
+                    <h3>Official Statement (April 5, 2023)</h3>
+                    <p>The last official update provided the following information:</p>
+                    <ul class="timeline-list">
+                        <li>No estimated timeline for official updates</li>
+                        <li>Project ownership limitations prevent community updates</li>
+                        <li>Community developers can't publish official releases</li>
+                        <li>Negotiations were ongoing for transfer of release permissions</li>
+                    </ul>
+                    <p>While the last update mentioned ongoing negotiations, this information is now outdated. Neoneko has made multiple attempts to contact the original project developers to take over the Official discord and update the Github, all without success. The original project is 100% abandoned.</p>
+                </div>
+                
+                <div class="statement-card">
+                    <h3>Neoneko's Statement (26/09/2024)</h3>
+                    <p>"At this point, it's safe to say that it's 100% been abandoned. Absolute Quantum (who goes by several different names) and Hotox are not active anywhere in the CATS community and haven't been for a very long time. I have recently tried to contact the main developer to see if we could take over the official CATS GitHub repository, but to no avail. At this point, I believe the main original developer has 100% vanished from the internet."</p>
+                    <p>Additionally, Neoneko spent over 6 months working with Patreon's safety team to have the original Cats Patreon page taken down, as the original developers were still receiving money from users unaware of the project's abandoned status. After persistent communication with Patreon's safety team, the page was successfully removed to prevent further misleading of users.</p>
+                </div>
+
+                <div class="statement-card">
+                    <h3>Noeneko's Statement (24/05/2025)</h3>
+                    <p>"Neoneko has decided to take the drastic step to remove all content regarding the official Cats Blender Plugin. This is because there are still too many people trying to use it in contexts where they shouldn't. Using the old official Cats plugin is like trying to keep an outdated engine running long after its service life has ended - it might start, but you'll constantly run into problems and compatibility issues."</p>
+                    <p>"Therefore, from now on Neoneko will no longer link to the old Cats whatsoever. Please just update to a newer version of Blender."</p>
+                </div>
+                
+                <!-- It's time to upgrade section -->
+                <div class="upgrade-section">
+                    <h2>It's Time to Upgrade</h2>
+                    
+                    <div class="upgrade-point">
+                        <h3>Many Blender plugins no longer support older versions</h3>
+                        <p>As Blender evolves, plugin developers focus their resources on newer versions. This means that not only Cats, but many other essential plugins you rely on, are dropping support for older Blender versions.</p>
+                    </div>
+                    
+                    <div class="upgrade-point">
+                        <h3>Blender 2.x is ancient</h3>
+                        <p>Blender 2.x is now considered legacy software. Finding support, tutorials, or fixes for issues in these versions is becoming increasingly difficult. Most developers and community members have moved on to newer versions.</p>
+                    </div>
+                    
+                    <div class="upgrade-point">
+                        <h3>Even Blender 3.x is being phased out</h3>
+                        <p>While Blender 3.x is newer than 2.x, it's still becoming outdated. Many plugins are starting to drop support for the earliest 3.x versions, and development focus has shifted to Blender 4.x. The transition to move forward is happening now.</p>
+                    </div>
+                </div>
+                
+                <h2>What This Means For Users</h2>
+                <div class="comparison-table">
+                    <table>
+                        <tr>
+                            <th>Official Cats Plugin Users</th>
+                            <th>Unofficial Cats Plugin Users</th>
+                        </tr>
+                        <tr>
+                            <td>No updates for new Blender versions</td>
+                            <td>Regular updates for latest Blender versions</td>
+                        </tr>
+                        <tr>
+                            <td>No bug fixes or improvements</td>
+                            <td>Active bug fixes and improvements</td>
+                        </tr>
+                        <tr>
+                            <td>No new feature additions</td>
+                            <td>New features and enhancements</td>
+                        </tr>
+                        <tr>
+                            <td>No community support</td>
+                            <td>Ongoing community support</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="help-section">
+                    <h2>How To Help The Community</h2>
+                    <div class="reason-card">
+                        <h3>Comment on YouTube tutorials and guides</h3>
+                        <ul>
+                            <li>Let viewers know the video uses outdated Cats Plugin</li>
+                            <li>Share the link to Unofficial Cats Plugin</li>
+                            <li>Mention that Unofficial Cats supports latest Blender versions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reason-card">
+                        <h3>Engage with community platforms</h3>
+                        <ul>
+                            <li>Update outdated forum posts</li>
+                            <li>Share success stories with Unofficial Cats</li>
+                            <li>Help redirect users to current documentation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reason-card">
+                        <h3>Spread awareness on social media</h3>
+                        <ul>
+                            <li>Share updates about Unofficial Cats</li>
+                            <li>Create new tutorials using current versions</li>
+                            <li>Join community discussions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-card">
+                    <h3>Warning About Outdated Tutorials</h3>
+                    <p>Be cautious of outdated tutorials suggesting manual fixes or code modifications. The "Testing" error in Blender 3.0+ is not a code issue - it indicates you're using an incompatible Cats version.</p>
+                    <p>Visit <a href="https://catsblenderplugin.xyz">https://catsblenderplugin.xyz</a> and use our version selector to get the correct version for your Blender installation.</p>
+                    <p>Many content creators incorrectly suggest removing "Testing" from the code, contradicting official guidance from both the Cats Discord and Neoneko team. Following these incorrect fixes will leave you with an outdated, unsupported version of Cats that lacks crucial updates and creates additional compatibility problems with Blender 3.0+.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <h3>Active Development</h3>
+                    <p>The official Cats Blender Plugin has not been actively maintained since June 2021. In contrast, our unofficial version receives regular updates to support the latest Blender versions and features.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <h3>Modern Blender Support</h3>
+                    <p>The unofficial version fully supports modern Blender versions (3.6, 4.0, 4.1, 4.2, 4.3, 4.4, and 4.5), while the official version is not compatible with Blender 4.x due to significant API changes.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <h3>Bug Fixes and Enhancements</h3>
+                    <p>We've fixed numerous bugs from the original plugin and added new features and optimizations to improve the user experience and compatibility with various 3D models.</p>
+                </div>
+
+                
+                <!-- Upgrading to Blender 4.2 LTS Guide -->
+                <div class="guide-section">
+                    <h2>Upgrading to Blender 4.2 LTS</h2>
+                    <div class="divider"></div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Why Blender 4.2 LTS?</h3>
+                        <p>Even though Blender 4.3 and 4.4 are available, we recommend Blender 4.2 as it's the latest Long-Term Support (LTS) release. LTS versions receive bug fixes and security updates for a longer period, making them more stable for production work.</p>
+                        <p>Make sure you download the latest version of Blender 4.2 LTS. Blender regularly releases updates with bug fixes and security improvements, so check for updates periodically to ensure you're using the most stable version available.</p>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Download Blender 4.2 LTS</h3>
+                        <p>You can download Blender 4.2 LTS from the official Blender website:</p>
+                        <a href="https://www.blender.org/download/lts/4-2/" class="download-button" target="_blank">Download Blender 4.2 LTS</a>
+                        <p>You can install Blender 4.2 alongside your existing Blender installation without conflicts.</p>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Blend File Compatibility</h3>
+                        <p>When upgrading from Blender 2.8/2.9 to Blender 4.2, you may encounter file compatibility issues. Here's what you need to know:</p>
+                        
+                        <div class="guide-card">
+                            <h4>Backward Compatibility:</h4>
+                            <ul class="guide-list">
+                                <li>Blender 4.2 can open files created in older versions (like 2.8/2.9)</li>
+                                <li>Most data will be properly converted, but some deprecated features may not transfer perfectly</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Forward Compatibility:</h4>
+                            <ul class="guide-list">
+                                <li>Files saved in Blender 4.2 may not open correctly in Blender 2.8/2.9</li>
+                                <li>Opening newer files in older versions can result in data loss, incorrect results, or even crashes</li>
+                                <li>Critical compatibility breakages typically occur when moving between major versions (e.g., from 2.x to 3.x or 3.x to 4.x)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Best Practices:</h4>
+                            <ul class="guide-list">
+                                <li>Always keep backups of your original .blend files before opening them in a newer version</li>
+                                <li>Consider using Blender 3.6 LTS as an intermediary converter if you need to move files between Blender 4.x and older versions</li>
+                                <li>For important projects, save versions in both the old and new Blender formats</li>
+                                <li>Test your workflow with non-critical files before committing to the upgrade for important projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Key Differences Between Blender 2.8/2.9 and 4.2</h3>
+                        
+                        <div class="guide-card">
+                            <h4>Interface Changes:</h4>
+                            <ul class="guide-list">
+                                <li>Redesigned Asset Browser for better organization</li>
+                                <li>Improved Node Editor with node groups and better organization</li>
+                                <li>Enhanced viewport performance and display options</li>
+                                <li>New Geometry Nodes system (replaces the old modifier workflow)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Technical Improvements:</h4>
+                            <ul class="guide-list">
+                                <li>Better multi-threading and performance optimization</li>
+                                <li>Improved UV editing tools</li>
+                                <li>Enhanced animation tools and rigging systems</li>
+                                <li>More robust simulation systems (cloth, fluid, etc.)</li>
+                                <li>Better import/export compatibility with various formats</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Add-on System Changes:</h4>
+                            <ul class="guide-list">
+                                <li>Introduction of the Extensions platform (separate from traditional add-ons)</li>
+                                <li>More standardized installation procedures</li>
+                                <li>Better version compatibility management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Extensions vs. Add-ons</h3>
+                        <p>Blender 4.2 introduced the new Extensions platform, which is different from the traditional add-on system:</p>
+                        
+                        <div class="guide-card">
+                            <h4>Traditional Add-ons:</h4>
+                            <ul class="guide-list">
+                                <li>Installed manually by selecting ZIP files through Preferences</li>
+                                <li>Stored in the Blender user preferences folder</li>
+                                <li>May have compatibility issues between Blender versions (though this can also apply to Extensions)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Extensions Platform:</h4>
+                            <ul class="guide-list">
+                                <li>Can be installed both from the online marketplace or locally from ZIP files</li>
+                                <li>Standardized distribution format</li>
+                                <li>More consistent update process for extensions installed from the marketplace (note that locally installed extensions still require manual updates)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>To install Extensions locally:</h4>
+                            <ol class="guide-list">
+                                <li>Download the Extension ZIP file</li>
+                                <li>Go to Edit > Preferences > Extensions</li>
+                                <li>Click on the Down arrow in the top right, then click 'Install from disk'</li>
+                                <li>Select the downloaded ZIP file</li>
+                                <li>The extension should automatically enable. If it doesn't, go to the Add-ons tab, find it in the list, and enable it by checking the box</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>To access the online Extensions marketplace in Blender 4.2:</h4>
+                            <ol class="guide-list">
+                                <li>Go to Edit > Preferences > Extensions</li>
+                                <li>You'll need to allow online access when prompted (this usually appears on first access)</li>
+                                <li>Once allowed, a search box will appear that lets you search for extensions from the Blender extension platform</li>
+                            </ol>
+                        </div>
+                        
+                        <p>Both add-ons and extensions can have version compatibility issues. If a developer drops support for a specific Blender version, you may encounter problems regardless of whether it's an add-on or extension.</p>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Essential Add-ons for VRChat Modeling in Blender 4.2</h3>
+                        
+                        <div class="guide-card">
+                            <h4>Unofficial Cats Blender Plugin</h4>
+                            <p>The original Cats Blender Plugin is no longer maintained, but the Unofficial Cats Blender Plugin continues development with support for Blender 4.2+ and many improvements.</p>
+                            
+                            <p><strong>Installation:</strong></p>
+                            <ul class="guide-list">
+                                <li>Download from the official website: <a href="https://catsblenderplugin.xyz" target="_blank">Cats Blender Plugin Website</a> or <a href="https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial" target="_blank">GitHub Repository</a></li>
+                                <li>In Blender, go to Edit > Preferences > Add-ons</li>
+                                <li>Click 'Install' and select the downloaded ZIP file</li>
+                                <li>Enable the add-on by checking the box</li>
+                            </ul>
+                            
+                            <p><strong>Key Improvements in Unofficial Cats:</strong></p>
+                            <ul class="guide-list">
+                                <li>Improved and faster Armature merging</li>
+                                <li>Improved and faster Eye Tracking and Viseme Creation</li>
+                                <li>UI Overhaul which is cleaner and more organized</li>
+                                <li>Enhanced Mesh Attachment System</li>
+                                <li>Faster Removed Doubles function</li>
+                                <li>Many bug fixes and improvements</li>
+                                <li>Latest MMD Tools integration</li>
+                            </ul>
+                            
+                            <p>The Unofficial Cats Blender Plugin includes MMD Tools, so you don't need to install MMD Tools separately.</p>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Tuxedo Blender Plugin</h4>
+                            <p>For model optimization and decimation, we now recommend using Tuxedo Blender Plugin alongside Unofficial Cats:</p>
+                            
+                            <p><strong>Installation:</strong></p>
+                            <ul class="guide-list">
+                                <li>Download from GitHub: <a href="https://github.com/GiveMeAllYourCats/Tuxedo-Blender-Plugin" target="_blank">Unofficial Tuxedo Blender Plugin</a></li>
+                                <li>Install through the Add-ons preferences as described above</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>VRM Add-on</h4>
+                            <p>For working with VRM files (popular in VRChat and VTubing), you'll need the VRM Add-on.</p>
+                            
+                            <p><strong>Installation Options:</strong></p>
+                            <ul class="guide-list">
+                                <li><strong>Via Extensions Platform:</strong>
+                                    <ul>
+                                        <li>In Blender, go to Edit > Preferences > Extensions</li>
+                                        <li>Click 'Browse Extensions'</li>
+                                        <li>Search for 'VRM'</li>
+                                        <li>Click 'Install' on the VRM Add-on</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Manual Installation:</strong>
+                                    <ul>
+                                        <li>Download from GitHub: <a href="https://github.com/saturday06/VRM-Addon-for-Blender" target="_blank">VRM Add-on for Blender</a></li>
+                                        <li>Install through the Add-ons preferences</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Source Tools</h4>
+                            <p>For working with Source engine models (Valve games):</p>
+                            
+                            <p><strong>Installation:</strong></p>
+                            <ul class="guide-list">
+                                <li>Download from Valve Developer Wiki: <a href="https://developer.valvesoftware.com/wiki/Blender_Source_Tools" target="_blank">Blender Source Tools</a></li>
+                                <li>Install through the Add-ons preferences</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>MMD Tools (Only if not using Unofficial Cats)</h4>
+                            <p>If you're not using the Unofficial Cats Blender Plugin (which includes MMD Tools), you can install it separately:</p>
+                            
+                            <p><strong>Installation:</strong></p>
+                            <ul class="guide-list">
+                                <li>Download from GitHub Releases: <a href="https://github.com/powroupi/blender_mmd_tools/releases" target="_blank">MMD Tools Releases</a></li>
+                                <li>Install through the Add-ons preferences</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Verifying Installation</h4>
+                            <p>After installing add-ons:</p>
+                            <ul class="guide-list">
+                                <li>Restart Blender</li>
+                                <li>Check if the add-ons appear in their expected locations:
+                                    <ul>
+                                        <li>Unofficial Cats: Should appear in the sidebar (N key) under 'Cats'</li>
+                                        <li>VRM: Should appear in the import/export menus</li>
+                                        <li>Source Tools: Should appear in the import/export menus</li>
+                                        <li>MMD Tools: Should appear in the sidebar under 'MMD Tools'</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Workflow Changes in Blender 4.2 with Unofficial Cats</h3>
+                        
+                        <div class="guide-card">
+                            <h4>General Blender Workflow Changes</h4>
+                            
+                            <p><strong>Modifier System:</strong></p>
+                            <ul class="guide-list">
+                                <li>The modifier stack now has better organization and visual feedback</li>
+                                <li>Geometry Nodes replace many traditional modifiers and offer more flexibility</li>
+                                <li>The Apply button has moved to the top of each modifier</li>
+                            </ul>
+                            
+                            <p><strong>Material Editing:</strong></p>
+                            <ul class="guide-list">
+                                <li>The Shader Editor has improved node organization</li>
+                                <li>Material preview is more accurate in the viewport</li>
+                                <li>PBR workflow is better supported with improved nodes</li>
+                            </ul>
+                            
+                            <p><strong>UV Editing:</strong></p>
+                            <ul class="guide-list">
+                                <li>UV tools are now more accessible in the UV Editor</li>
+                                <li>Better seam detection and unwrapping algorithms</li>
+                                <li>Multi-object UV editing is more streamlined</li>
+                            </ul>
+                            
+                            <p><strong>Animation:</strong></p>
+                            <ul class="guide-list">
+                                <li>The Dope Sheet and Graph Editor have improved controls</li>
+                                <li>Better keyframe management and editing tools</li>
+                                <li>Enhanced rigging tools with improved weight painting</li>
+                            </ul>
+                            
+                            <p><strong>File Management:</strong></p>
+                            <ul class="guide-list">
+                                <li>Asset Browser allows for better organization of commonly used assets</li>
+                                <li>Improved linking and appending workflow</li>
+                                <li>Better handling of external files and dependencies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Unofficial Cats Specific Changes</h4>
+                            
+                            <p><strong>Quick Access Panel:</strong></p>
+                            <p>The Quick Access panel now includes:</p>
+                            <ul class="guide-list">
+                                <li>Improved model import with optimal settings</li>
+                                <li>Better export options for Unity and Resonite</li>
+                                <li>Enhanced material combining</li>
+                                <li>Streamlined pose mode controls</li>
+                            </ul>
+                            
+                            <p><strong>Custom Model Creation:</strong></p>
+                            <p>The Custom Model panel offers:</p>
+                            <ul class="guide-list">
+                                <li>More reliable armature merging</li>
+                                <li>Better mesh attachment options</li>
+                                <li>Improved bone handling during merges</li>
+                                <li>Enhanced shape key preservation</li>
+                            </ul>
+                            
+                            <p><strong>MMD Options Section:</strong></p>
+                            <div class="highlight-block">
+                                FIX MMD MODEL SHOULD ONLY BE USED FOR NEW MMD/VRM MODELS WHICH HAVE NOT BEEN SET UP FOR UNITY. DO NOT USE THIS IF YOUR MODEL HAS ALREADY BEEN SET UP FOR UNITY (PURCHASED FROM GUMROAD, BOOTH OR SIMILAR) OR IF YOU ARE CREATING YOUR OWN MODEL.
+                            </div>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>Adapting Your Workflow</h4>
+                            
+                            <p><strong>Import/Export:</strong></p>
+                            <ul class="guide-list">
+                                <li>Use the Cats Quick Access panel for importing models instead of Blender's native importers</li>
+                                <li>For exporting to Unity, use the 'Export Model' option in Cats</li>
+                                <li>For Resonite, use the dedicated Resonite export option</li>
+                            </ul>
+                            
+                            <p><strong>Material Handling:</strong></p>
+                            <ul class="guide-list">
+                                <li>The Material Combiner has been improved and is more reliable</li>
+                                <li>Texture atlasing works better with complex materials</li>
+                                <li>Better handling of transparency and special effects</li>
+                            </ul>
+                            
+                            <p><strong>Optimization:</strong></p>
+                            <ul class="guide-list">
+                                <li>Use Tuxedo Blender Plugin for decimation and optimization</li>
+                                <li>Better polygon reduction while preserving important features</li>
+                                <li>Improved atlas generation for textures</li>
+                            </ul>
+                            
+                            <p><strong>File Organization:</strong></p>
+                            <ul class="guide-list">
+                                <li>Take advantage of Blender 4.2's Asset Browser for organizing common avatar parts</li>
+                                <li>Use Collections more effectively to organize complex avatars</li>
+                                <li>Leverage the improved linking system for reusing assets across files</li>
+                            </ul>
+                            
+                            <p>If you're coming from Blender 2.8/2.9 with the original Cats plugin, take some time to explore the new features in Unofficial Cats. Many workflows have been streamlined and improved.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-subsection">
+                        <h3>Troubleshooting Common Issues</h3>
+                        
+                        <div class="guide-card">
+                            <h4>If add-ons don't appear after installation:</h4>
+                            <ul class="guide-list">
+                                <li>Check if they're enabled in the Add-ons preferences</li>
+                                <li>Verify that you've installed the correct version for Blender 4.2</li>
+                                <li>Restart Blender completely</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>If models import incorrectly:</h4>
+                            <ul class="guide-list">
+                                <li>Try using the Cats importer instead of Blender's native importers</li>
+                                <li>Check for any error messages in the Blender console (Window > Toggle System Console)</li>
+                                <li>Verify that your model files aren't corrupted</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guide-card">
+                            <h4>If you experience performance issues:</h4>
+                            <ul class="guide-list">
+                                <li>In Blender 4.2, check Edit > Preferences > System for hardware acceleration settings</li>
+                                <li>Adjust the Viewport settings for better performance with complex models</li>
+                                <li>Consider using Simplify options in the Render Properties panel</li>
+                            </ul>
+                        </div>
+                        
+                        <p>Always keep backups of your projects when transitioning to a new Blender version. Some features and add-ons may behave differently than you're used to.</p>
+                    </div>
+                </div>
+                
+                <div class="cta-container">
+                    <p>Ready to get started with the recommended version?</p>
+                    <div class="cta-buttons">
+                        <a href="index.html#download" class="button">Download Unofficial Version</a>
+                        <a href="https://discord.neoneko.xyz/" class="button" target="_blank">Join Our Discord</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://neoneko.xyz/about.html">About</a>
+                    <a href="https://neoneko.xyz/contact.html">Contact</a>
+                    <a href="https://neoneko.xyz/support-us.html">Support Us</a>
+                    <a href="https://neoneko.xyz/privacy-policy.html">Privacy Policy</a>
+                    <a href="https://neoneko.xyz/terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Cats Blender Plugin Unofficial and Avatar Toolkit are licensed under the GPLv3 License.</p>
+                    <p>Blender is a registered trademark of the Blender Foundation.</p>
+                    <p>Neoneko is not affiliated with the Blender Foundation.</p>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 - 2025 Neoneko. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

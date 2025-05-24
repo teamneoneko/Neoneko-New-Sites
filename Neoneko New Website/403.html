@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Access forbidden - Neoneko">
+    <title>403 - Forbidden | Neoneko</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 5rem 0;
+            background: radial-gradient(circle at center, #102540 0%, var(--bg-dark) 70%);
+            border-radius: 16px;
+            margin-bottom: 4rem;
+            min-height: 50vh;
+            min-height: calc(var(--vh, 1vh) * 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            background: linear-gradient(90deg, var(--primary-light), var(--accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+        
+        .error-message {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .error-description {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-message {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-message {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="https://avatars.githubusercontent.com/u/170367184?s=200&v=4" alt="Neoneko Logo" class="logo-image">
+                    <span class="logo-text">Neoneko</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Projects</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://cats.neoneko.xyz" role="menuitem">Cats Blender Plugin</a>
+                            <a href="https://toolkit.neoneko.xyz" role="menuitem">Avatar Toolkit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Community</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://discord.neoneko.xyz/" role="menuitem">Discord</a>
+                            <a href="https://bsky.app/profile/neoneko.xyz" role="menuitem">Bluesky</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">About</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="about.html" role="menuitem">About Us</a>
+                            <a href="support-us.html" role="menuitem">Support Us</a>
+                            <a href="contact.html" role="menuitem">Contact</a>
+                        </div>
+                    </li>
+                    <li><a href="wiki.html">Wiki</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section class="error-container">
+                <h1 class="error-code">403</h1>
+                <h2 class="error-message">Access Forbidden</h2>
+                <div class="divider"></div>
+                <p class="error-description">
+                    You don't have permission to access this resource.
+                    This may be due to restricted access or you might need to log in to view this content.
+                </p>
+                <div class="error-actions">
+                    <a href="index.html" class="button">Go to Homepage</a>
+                    <a href="contact.html" class="button">Contact Support</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="support-us.html">Support Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Cats Blender Plugin Unofficial and Avatar Toolkit are licensed under the GPLv3 License.</p>
+                    <p>Blender is a registered trademark of the Blender Foundation.</p>
+                    <p>Neoneko is not affiliated with the Blender Foundation.</p>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 - 2025 Neoneko. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+</body>
+</html>

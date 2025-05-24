@@ -1,0 +1,173 @@
+{
+  "versions": [
+    {
+      "id": "blender-4-5",
+      "name": "Cats Blender Plugin 4.5.0.0",
+      "blenderVersions": "4.5 Alpha",
+      "status": "alpha",
+      "description": "Alpha version for Blender 4.5. Both Blender 4.5 and this version of Cats Blender Plugin are in early Alpha stage.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.5.0.0",
+      "warning": "WARNING: Both Blender 4.5 and this version of Cats Blender Plugin are in early Alpha stage. Expect bugs, crashes, and other issues during usage.",
+      "supportLinks": [
+        {
+          "name": "Discord",
+          "url": "https://discord.catsblenderplugin.xyz/",
+          "icon": "💬"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.5.0.0",
+          "icon": "📦"
+        },
+        {
+          "name": "Wiki",
+          "url": "legacywiki.html",
+          "icon": "📚"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-4-4",
+      "name": "Cats Blender Plugin 4.4.1.1",
+      "blenderVersions": "4.4",
+      "status": "stable",
+      "description": "Stable release for Blender 4.4.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.4.1.1",
+      "warning": "Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.",
+      "supportLinks": [
+        {
+          "name": "Discord",
+          "url": "https://discord.catsblenderplugin.xyz/",
+          "icon": "💬"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.4.1.1",
+          "icon": "📦"
+        },
+        {
+          "name": "Wiki",
+          "url": "legacywiki.html",
+          "icon": "📚"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-4-3",
+      "name": "Cats Blender Plugin 4.3.2.1",
+      "blenderVersions": "4.3",
+      "status": "stable",
+      "description": "Stable release for Blender 4.3.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.3.2.1",
+      "warning": "This version has reached End-of-Life (EOL) status and will no longer receive updates. Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts.",
+      "supportLinks": [
+        {
+          "name": "Discord",
+          "url": "https://discord.catsblenderplugin.xyz/",
+          "icon": "💬"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.3.2.1",
+          "icon": "📦"
+        },
+        {
+          "name": "Wiki",
+          "url": "legacywiki.html",
+          "icon": "📚"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-4-2",
+      "name": "Cats Blender Plugin 4.2.3.1",
+      "blenderVersions": "4.2",
+      "status": "stable",
+      "description": "Blender 4.2 is the next Blender Long Term Support (LTS) release, and the unofficial Cats add-on fully supports this version with enhanced features and stability improvements.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.2.3.1",
+      "warning": "Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts as this version includes its own MMD Tools implementation.",
+      "supportLinks": [
+        {
+          "name": "Discord",
+          "url": "https://discord.catsblenderplugin.xyz/",
+          "icon": "💬"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.2.3.1",
+          "icon": "📦"
+        },
+        {
+          "name": "Wiki",
+          "url": "legacywiki.html",
+          "icon": "📚"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-4-1",
+      "name": "Cats Blender Plugin 4.1.2.4",
+      "blenderVersions": "4.1",
+      "status": "stable",
+      "description": "The unofficial Cats add-on for Blender 4.1 provides full compatibility and enhanced features for your avatar creation needs.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.1.2.4",
+      "warning": "This version has reached End-of-Life (EOL) status and will no longer receive updates. Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts.",
+      "supportLinks": [
+        {
+          "name": "Discord",
+          "url": "https://discord.catsblenderplugin.xyz/",
+          "icon": "💬"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.1.2.4",
+          "icon": "📦"
+        },
+        {
+          "name": "Wiki",
+          "url": "legacywiki.html",
+          "icon": "📚"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-4-0",
+      "name": "Cats Blender Plugin 4.0.5.2",
+      "blenderVersions": "4.0",
+      "status": "stable",
+      "description": "Stable release for Blender 4.0. For Blender 4.x versions, we recommend using the unofficial Cats add-on for Blender 4.1, which is still actively maintained.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.0.5.2",
+      "warning": "This version has reached End-of-Life (EOL) status and will no longer receive updates. Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools.",
+      "supportLinks": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/4.0.5.2",
+          "icon": "📦"
+        }
+      ],
+      "alternativeDownloads": []
+    },
+    {
+      "id": "blender-3-6",
+      "name": "Cats Blender Plugin 3.6.8.3",
+      "blenderVersions": "3.6",
+      "status": "stable",
+      "description": "Blender 3.6 LTS offers two support options: the unofficial Cats add-on (recommended) and the official Cats add-on.",
+      "downloadUrl": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/3.6.8.3",
+      "warning": "This version has reached End-of-Life (EOL) status. Known Incompatible Addons: Official Cats Blender Plugin and MMD Tools may cause conflicts.",
+      "supportLinks": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/teamneoneko/Cats-Blender-Plugin-Unofficial-/releases/tag/3.6.8.3",
+          "icon": "📦"
+        }
+      ],
+      "alternativeDownloads": []
+    }
+  ]
+}

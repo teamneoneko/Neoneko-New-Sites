@@ -1,0 +1,113 @@
+/* Legal Pages Specific Styles */
+.legal-section {
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-content {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.last-updated {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+.legal-content h2 {
+    color: var(--primary-light);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.legal-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.legal-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.legal-content ul, .legal-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.legal-content a.email-link, 
+.legal-content a.external-link {
+    color: var(--primary-light);
+    text-decoration: none;
+    position: relative;
+    transition: var(--transition-normal);
+}
+
+.legal-content a.email-link:after, 
+.legal-content a.external-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary-light), var(--accent-light));
+    transition: var(--transition-normal);
+}
+
+.legal-content a.email-link:hover, 
+.legal-content a.external-link:hover {
+    color: var(--accent-light);
+}
+
+.legal-content a.email-link:hover:after, 
+.legal-content a.external-link:hover:after {
+    width: 100%;
+}
+
+.legal-content a.external-link:before {
+    content: '↗';
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 0.8em;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 1.5rem;
+    }
+    
+    .legal-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .legal-content p, .legal-content li {
+        font-size: 0.95rem;
+    }
+    
+    /* Larger touch targets for mobile */
+    .legal-content a.email-link, 
+    .legal-content a.external-link {
+        padding: 4px 0;
+        display: inline-block;
+    }
+}
+
+/* Small phones (up to 375px) */
+@media (max-width: 375px) {
+    .legal-content {
+        padding: 1.25rem;
+    }
+}

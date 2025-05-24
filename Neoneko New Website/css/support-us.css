@@ -1,0 +1,160 @@
+/* Support Us Page Specific Styles */
+.support-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 3.5rem auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.support-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 3.5rem 0;
+}
+
+.support-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-container {
+    margin-top: auto;
+}
+
+.support-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(107, 152, 194, 0.3);
+    background-color: var(--bg-card-hover);
+}
+
+.support-card:hover:before {
+    transform: scaleX(1);
+}
+
+.support-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.support-card h2:after {
+    content: none;
+}
+
+.support-card p {
+    flex-grow: 1;
+    margin-bottom: 1.8rem;
+    min-height: 80px;
+    line-height: 1.7;
+}
+
+.thank-you {
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color: rgba(12, 30, 51, 0.5);
+    border-radius: 12px;
+}
+
+.thank-you h2 {
+    margin-bottom: 1rem;
+}
+
+.thank-you h2:after {
+    left: 40%;
+    width: 20%;
+}
+
+.thank-you .divider {
+    margin: 1rem auto 2rem auto;
+}
+
+.thank-you p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Fix dividers in support-us page */
+.support-section h1 + .divider,
+.thank-you h2 + .divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .support-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .support-card {
+        width: 100%;
+    }
+    
+    .support-card p {
+        min-height: auto;
+    }
+    
+    .thank-you {
+        padding: 2rem 1.5rem;
+    }
+    
+    .support-card {
+        padding: 24px;
+    }
+    
+    .button {
+        padding: 14px 24px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Small phones (up to 375px) */
+@media (max-width: 375px) {
+    .support-card {
+        padding: 1.5rem;
+    }
+    
+    .thank-you {
+        padding: 1.5rem;
+    }
+}

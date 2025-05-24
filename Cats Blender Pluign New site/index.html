@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Cats Blender Plugin is a tool designed to shorten steps needed to import and optimize models into VRChat and other platforms.">
+    <title>Cats Blender Plugin - Home</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+    
+    <!-- Favicon (same location as Neoneko) -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/170367184?s=200&v=4" type="image/png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cats.neoneko.xyz/">
+    <meta property="og:title" content="Cats Blender Plugin - Tools for 3D Creators and VR users">
+    <meta property="og:description" content="A tool designed to shorten steps needed to import and optimize models into VRChat and other platforms.">
+    <meta property="og:image" content="https://cats.neoneko.xyz/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cats.neoneko.xyz/">
+    <meta property="twitter:title" content="Cats Blender Plugin - Tools for 3D Creators and VR users">
+    <meta property="twitter:description" content="A tool designed to shorten steps needed to import and optimize models into VRChat and other platforms.">
+    <meta property="twitter:image" content="https://cats.neoneko.xyz/images/og-image.jpg">
+    
+    <!-- Structured data for organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Cats Blender Plugin",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Neoneko",
+            "url": "https://neoneko.xyz"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <!-- Logo using the same location as Neoneko -->
+                    <img src="https://avatars.githubusercontent.com/u/170367184?s=200&v=4" alt="Cats Blender Plugin Logo" class="logo-image">
+                    <span class="logo-text">Cats Blender Plugin</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Projects</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://cats.neoneko.xyz" role="menuitem">Cats Blender Plugin</a>
+                            <a href="https://toolkit.neoneko.xyz" role="menuitem">Avatar Toolkit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">Community</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://discord.neoneko.xyz/" role="menuitem">Discord</a>
+                            <a href="https://github.com/teamneoneko/cats-blender-plugin" role="menuitem">GitHub</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false" role="button">About</a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="https://neoneko.xyz/about.html" role="menuitem">About Us</a>
+                            <a href="https://neoneko.xyz/support-us.html" role="menuitem">Support Us</a>
+                            <a href="https://neoneko.xyz/contact.html" role="menuitem">Contact</a>
+                        </div>
+                    </li>
+                    <li><a href="legacywikilegacy.html">wiki</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section class="hero">
+                <h1>Cats Blender Plugin</h1>
+                <div class="divider"></div>
+                <p class="hero-text">A tool designed to shorten steps needed to import and optimize models.</p>
+                <p class="description">
+                    Cats Blender Plugin helps you import and optimize 3D models for VRChat and other platforms. It supports 
+                    MMD, XNALara, Mixamo, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3DS Max and potentially more model types.
+                </p>
+                <div class="cta">
+                    <a href="#download" class="button">Download Now</a>
+                </div>
+            </section>
+
+            <section id="download" class="download-section">
+                <h2>Download Cats Blender Plugin</h2>
+                <div class="divider"></div>
+                
+                <div class="official-notice">
+                    <p>Looking for the official Cats Blender Plugin? <a href="noofficial.html">Click here</a> to learn why we don't feature it anymore.</p>
+                </div>
+                
+                <div class="version-selector-container">
+                    <div class="selector-instructions">
+                        <p>Select your Blender version to get the correct download:</p>
+                    </div>
+                    
+                    <div class="version-selector">
+                        <select id="blender-version-select" aria-label="Select Blender Version">
+                            <option value="" selected disabled>Choose your Blender version</option>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div id="version-details" class="version-details">
+                        <div class="selected-version-info">
+                            <h3 id="selected-version-title">Select a version above</h3>
+                            <div class="version-badges">
+                                <span id="blender-badge" class="badge badge-blender">Blender: N/A</span>
+                                <span id="cats-badge" class="badge badge-cats hidden">Version: N/A</span>
+                                <span id="status-badge" class="badge badge-status">Status: N/A</span>
+                            </div>
+                            <p id="version-description">Please select a Blender version to see compatible downloads.</p>
+                            <div id="version-warning" class="version-warning hidden"></div>
+                            
+                            <!-- Support Links Section -->
+                            <div id="support-links" class="support-links hidden">
+                                <h4>Support Resources</h4>
+                                <div id="support-links-container" class="support-links-container">
+                                    <!-- Support links will be added here by JS -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="download-options" class="download-options">
+                            <a id="download-button" href="#" class="button button-download disabled" target="_blank">Select a version first</a>
+                            <p id="download-note" class="download-note hidden">Click the button above to go to the download page.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://neoneko.xyz/about.html">About</a>
+                    <a href="https://neoneko.xyz/contact.html">Contact</a>
+                    <a href="https://neoneko.xyz/support-us.html">Support Us</a>
+                    <a href="https://neoneko.xyz/privacy-policy.html">Privacy Policy</a>
+                    <a href="https://neoneko.xyz/terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Cats Blender Plugin Unofficial and Avatar Toolkit are licensed under the GPLv3 License.</p>
+                    <p>Blender is a registered trademark of the Blender Foundation.</p>
+                    <p>Neoneko is not affiliated with the Blender Foundation.</p>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 - 2025 Neoneko. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/versions.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toolkit.neoneko.xyz/sitemap.xml
+
+# Disallow crawling of certain files
+Disallow: /js/
+Disallow: /css/

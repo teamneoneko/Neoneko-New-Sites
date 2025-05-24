@@ -1,0 +1,164 @@
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    background: radial-gradient(circle at center, #102540 0%, var(--bg-dark) 70%);
+    border-radius: 16px;
+    margin-bottom: 4rem;
+    min-height: 50vh;
+    min-height: calc(var(--vh, 1vh) * 50);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+.hero h1:after {
+    left: 40%;
+    width: 20%;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta {
+    margin: 2.5rem 0;
+}
+
+.cta .button {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+}
+
+.featured-projects {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgba(12, 30, 51, 0.5);
+    border-radius: 16px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card--project {
+    width: 400px;
+    min-height: 400px;
+    padding-bottom: 80px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+    background-color: var(--bg-card-hover);
+}
+
+.card__title {
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.card__description {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.card__button {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 5rem);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+    }
+    
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+    
+    .card__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}

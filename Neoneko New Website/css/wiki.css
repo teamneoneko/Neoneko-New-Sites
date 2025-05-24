@@ -1,0 +1,136 @@
+.wiki-section {
+    padding: 2rem 0;
+}
+
+.wiki-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.wiki-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.wiki-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 3rem;
+    width: 450px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+
+.wiki-card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.wiki-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(107, 152, 194, 0.3);
+    background-color: var(--bg-card-hover);
+}
+
+.wiki-card:hover:after {
+    transform: scaleX(1);
+}
+
+.wiki-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wiki-card h2:after {
+    content: none;
+}
+
+.wiki-card p {
+    margin-bottom: auto;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.wiki-card .button {
+    align-self: center;
+    margin-top: auto;
+    position: relative;
+    top: 12px;
+    margin-bottom: 5px;
+}
+
+.wiki-section h1 + .divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .wiki-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .wiki-card {
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .wiki-card h2 {
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    
+    .wiki-card p {
+        margin-bottom: 2rem;
+    }
+    
+    .wiki-card .button {
+        top: 5px;
+    }
+    
+    .wiki-card {
+        padding: 24px;
+    }
+    
+    .button {
+        padding: 14px 24px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .wiki-card {
+        padding: 1.5rem;
+    }
+}

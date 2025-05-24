@@ -1,0 +1,108 @@
+.contact-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-section h1 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-intro {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.contact-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.contact-card h2:after {
+    content: none;
+}
+
+.contact-card p {
+    margin-bottom: 1.8rem;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.discord-button {
+    background: linear-gradient(135deg, #7289da, #5865F2);
+}
+
+.discord-button:hover {
+    background: linear-gradient(135deg, #8ea1e1, #6975F3);
+}
+
+.github-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: auto;
+}
+
+.contact-section h1 + .divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+    }
+    
+    .button {
+        padding: 14px 24px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-card {
+        padding: 1.5rem;
+    }
+}
